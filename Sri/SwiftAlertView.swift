@@ -285,6 +285,9 @@ open class SwiftAlertView: UIView {
         
         
     }
+    @IBAction func whatsApp(_ sender: Any) {
+      Social_url = "https://chat.whatsapp.com/CZF8woXmiW1jPulrf0KyE"
+    }
     
     // programmatically dismiss the alert view
     open func dismiss() {

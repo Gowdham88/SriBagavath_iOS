@@ -12,8 +12,8 @@ class galleries: UITableViewController {
 
     @IBOutlet var newcell: UITableView!
     
-    var titlearray = ["Audios Tamil","Audio English","Ayya Message"]
-    var imagearray = ["sub1","sub1","sub2"]
+    var titlearray = ["Audios Tamil","Audio English"]
+    var imagearray = ["sub1","sub1"]
     var url : String = ""
     
     
@@ -44,7 +44,7 @@ class galleries: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,13 +79,7 @@ class galleries: UITableViewController {
             url = "http://www.sribagavath.org/audio-english/"
             self.performSegue(withIdentifier: "galwebview", sender: self)
             
-    } else if row == 2 {
-        url = "http://www.sribagavath.org/magazine/"
-        self.performSegue(withIdentifier: "galwebview", sender: self)
-        
-        
-    }
-
+        }
     }
 
 

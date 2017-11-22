@@ -116,14 +116,14 @@ class sri: UITableViewController,SwiftAlertViewDelegate {
             self.performSegue(withIdentifier: "webclick", sender: self)
         }
         else if row == 7{
-            url="http://www.sribagavath.org/store/"
+            url="http://pravaagam.org/buy_book.php"
             self.performSegue(withIdentifier: "webclick", sender: self)
             
         }
             
         else if row == 8 {
             
-            url="http://sribagavath.us6.list-manage.com/subscribe/post?u=cf5d11c8a31d4d5cb407913cf&id=253ea3bfe4"
+            url="http://pravaagam.org/magazine.php"
             self.performSegue(withIdentifier: "webclick", sender: self)
             
         }
