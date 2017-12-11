@@ -10,11 +10,6 @@ import UIKit
 
 class CustomAlertView: UIViewController {
     
-    
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

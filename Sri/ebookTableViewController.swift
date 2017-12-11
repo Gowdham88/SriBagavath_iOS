@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+import MBProgressHUD
 
 
 var ebooknameArray        = [String]()
@@ -270,3 +272,5 @@ class ebookTableViewController: UITableViewController {
      */
     
 }
+
+

@@ -34,6 +34,7 @@
 		6F9956E31D3E0058001C5F74 /* czwebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9956E21D3E0058001C5F74 /* czwebViewController.swift */; };
 		6FC8A81C1F0D1036001FAE21 /* birds013.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FC8A81B1F0D1036001FAE21 /* birds013.mp3 */; };
 		6FC8A8201F0D2F39001FAE21 /* CounsellVcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8A81F1F0D2F39001FAE21 /* CounsellVcCell.swift */; };
+		729DF533C4120B683FC25B35 /* Pods_Sri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA133914B797A7326153C0E /* Pods_Sri.framework */; };
 		FA72254B1D38FC71000E541C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72254A1D38FC71000E541C /* AppDelegate.swift */; };
 		FA72254D1D38FC71000E541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72254C1D38FC71000E541C /* ViewController.swift */; };
 		FA7225601D38FC71000E541C /* SriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72255F1D38FC71000E541C /* SriTests.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA133914B797A7326153C0E /* Pods_Sri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600948751D40A835008B9AE9 /* playerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerViewController.swift; sourceTree = "<group>"; };
 		600948771D40A8AD008B9AE9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		600948791D40A8DF008B9AE9 /* DMKsongs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMKsongs.swift; sourceTree = "<group>"; };
@@ -87,6 +89,8 @@
 		6F9956E21D3E0058001C5F74 /* czwebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = czwebViewController.swift; sourceTree = "<group>"; };
 		6FC8A81B1F0D1036001FAE21 /* birds013.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds013.mp3; sourceTree = "<group>"; };
 		6FC8A81F1F0D2F39001FAE21 /* CounsellVcCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounsellVcCell.swift; sourceTree = "<group>"; };
+		85945A7903A4341A666700DD /* Pods-Sri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sri.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sri/Pods-Sri.release.xcconfig"; sourceTree = "<group>"; };
+		8ADBDD4CE031EBF5D3771114 /* Pods-Sri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sri/Pods-Sri.debug.xcconfig"; sourceTree = "<group>"; };
 		FA7225471D38FC71000E541C /* Sri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA72254A1D38FC71000E541C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA72254C1D38FC71000E541C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729DF533C4120B683FC25B35 /* Pods_Sri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,12 +131,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EF14BB4C2E21C291253DDAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA133914B797A7326153C0E /* Pods_Sri.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6009488F1D475DDA008B9AE9 /* SwiftAlertView */ = {
 			isa = PBXGroup;
 			children = (
 				600948901D475E3B008B9AE9 /* SwiftAlertView.swift */,
 			);
 			name = SwiftAlertView;
+			sourceTree = "<group>";
+		};
+		C7738865982E408D67CA614A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ADBDD4CE031EBF5D3771114 /* Pods-Sri.debug.xcconfig */,
+				85945A7903A4341A666700DD /* Pods-Sri.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FA72253E1D38FC71000E541C = {
@@ -142,6 +164,8 @@
 				FA7225691D38FC71000E541C /* SriUITests */,
 				FA7225481D38FC71000E541C /* Products */,
 				6FC8A81B1F0D1036001FAE21 /* birds013.mp3 */,
+				C7738865982E408D67CA614A /* Pods */,
+				4EF14BB4C2E21C291253DDAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA72256F1D38FC71000E541C /* Build configuration list for PBXNativeTarget "Sri" */;
 			buildPhases = (
+				21D43B270AA8AE15CC6965E0 /* [CP] Check Pods Manifest.lock */,
 				FA7225431D38FC71000E541C /* Sources */,
 				FA7225441D38FC71000E541C /* Frameworks */,
 				FA7225451D38FC71000E541C /* Resources */,
+				33CBF152D74368ED6863BB1B /* [CP] Embed Pods Frameworks */,
+				A780027AFBE9DEEB4BA1E747 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,6 +369,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21D43B270AA8AE15CC6965E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33CBF152D74368ED6863BB1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sri/Pods-Sri-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sri/Pods-Sri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A780027AFBE9DEEB4BA1E747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sri/Pods-Sri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA7225431D38FC71000E541C /* Sources */ = {
@@ -505,6 +588,7 @@
 		};
 		FA7225701D38FC71000E541C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADBDD4CE031EBF5D3771114 /* Pods-Sri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XSJRRDKMW9;
@@ -520,6 +604,7 @@
 		};
 		FA7225711D38FC71000E541C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85945A7903A4341A666700DD /* Pods-Sri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XSJRRDKMW9;

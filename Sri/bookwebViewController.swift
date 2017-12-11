@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
 
-class bookwebViewController: UIViewController,UIWebViewDelegate {
-   
+
+class bookwebViewController: UIViewController, UIWebViewDelegate {
+    
     @IBOutlet var bookspinner: UIActivityIndicatorView!
 
     @IBOutlet weak var webbook : UIWebView!
+    
     
     var urlpath : String = ebooknameArray[songcount]
     func loadaddressURL() {
@@ -20,7 +24,8 @@ class bookwebViewController: UIViewController,UIWebViewDelegate {
         let requestURL = URL (string:urlpath)
         let request = URLRequest(url: requestURL!)
          webbook.loadRequest(request)
-        
+        downloadPDFFile(urlString: urlpath)
+      
     }
 
     
@@ -30,7 +35,7 @@ class bookwebViewController: UIViewController,UIWebViewDelegate {
        bookspinner.hidesWhenStopped = true
        webbook.delegate = self
        loadaddressURL()
-        
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +61,64 @@ class bookwebViewController: UIViewController,UIWebViewDelegate {
         bookspinner.stopAnimating()
     }
     
-    
 
-   }
+    func downloadPDFFile(urlString:String)
+        
+    {
+
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+
+        hud.mode = MBProgressHUDMode.annularDeterminate
+
+        hud.label.text = "Loading"
+
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+
+            let documentsURL:NSURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first! as    NSURL
+
+            print(documentsURL)
+
+            let PDF_name : String = "Downloded_PDF_Name"
+
+            let fileURL = documentsURL.appendingPathComponent(PDF_name)
+
+            print(fileURL ?? "")
+
+            return (fileURL!,[.removePreviousFile, .createIntermediateDirectories])
+
+        }
+
+        Alamofire.download(urlString, to: destination).downloadProgress(closure: { (prog) in
+
+            hud.progress = Float(prog.fractionCompleted)
+
+        }).response { response in
+
+
+
+            hud.hide(animated: true)
+
+            if response.error == nil, let filePath = response.destinationURL?.path    {
+
+                print(filePath)
+
+
+
+                //Open this filepath in Webview Object
+
+
+
+                let fileURL = URL(fileURLWithPath: filePath)
+
+                let request = URLRequest(url: fileURL)
+
+
+
+            }
+
+        }
+        
+    }
+}
+
+
